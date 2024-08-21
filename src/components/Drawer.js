@@ -7,9 +7,9 @@ function Drawer({onClickClose, items = []}) {
                 <div className="items">
                     {items.map((obj) => (
                         <div className="cartItem d-flex align-center justify-between mb-20">
-                            <img className="mr-20" width={70} height={70} src={obj.img} alt={obj.name} />
+                            <img className="mr-20" width={70} height={70} src={obj.imageUrl} alt={obj.name} />
                             <div className="mr-20">
-                                <p>{obj.name}</p>
+                                <p>{obj.title}</p>
                                 <b>{obj.price}$</b>
                             </div>
                             <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove"/>
